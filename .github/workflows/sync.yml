@@ -36,7 +36,7 @@ jobs:
   build-and-push:
     needs:
       - check-version
-    if: needs.check-version.outputs.image_exists == 'false'
+    # if: needs.check-version.outputs.image_exists == 'false'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Keel
